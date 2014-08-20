@@ -1,6 +1,7 @@
 from bottle import run
 
+import controllers
 import config.database
 import config.routes
 
-run(host="localhost", port=8080)
+run(app, host="localhost", port=8080)
