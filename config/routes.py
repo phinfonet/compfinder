@@ -1,5 +1,6 @@
-from bottle import route, Bottle
+from bottle import route
+from controllers import *
 
-app = Bottle()
-app.route('/', 'GET', callback=index)
+def setup_routes(app):
+    app.route('/', 'GET', index)
 

@@ -1,7 +1,8 @@
-from bottle import run
-
-import controllers
 import config.database
-import config.routes
+from bottle import Bottle, run
+from config.routes import *
 
+app = Bottle()
+
+setup_routes(app)
 run(app, host="localhost", port=8080)

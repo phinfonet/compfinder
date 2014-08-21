@@ -1,1 +1,15 @@
-config/__pycache__
+config/__pycache__/
+__pycache__/
+*.pyc
+*.pyo
+*.db
+*.log
+._*
+.*
+*.*~
+dist/
+build/
+MANIFEST
+bottle.egg-info/
+.htmlcoverage/
+
